@@ -1,1 +1,0 @@
-savedcmd_/home/maverick/Desktop/pro/code/embeded_driver/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/maverick/Desktop/pro/code/embeded_driver/Module.symvers -T /home/maverick/Desktop/pro/code/embeded_driver/modules.order -i Module.symvers -e 
