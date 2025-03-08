@@ -1,29 +1,20 @@
 # /*
 #  * @Author: Maverick m14775611609@163.com
-#  * @Date: 2025-03-08 21:42:23
+#  * @Date: 2025-03-09 00:03:10
 #  * @LastEditors: Maverick m14775611609@163.com
-#  * @LastEditTime: 2025-03-08 22:04:17
+#  * @LastEditTime: 2025-03-09 00:03:30
 #  * @FilePath: /embeded_driver/Makefile
 #  * @Description: 
 #  * 
 #  * Copyright (c) 2025 by Maverick, Xiao Bi Software Company ,All Rights Reserved. 
 #  */
+SRCFILE := src
 
-CC := gcc-12
-obj-m := firstdriver.o
-CURRENT_PATH := $(shell pwd)
-LINUX_KERNEL := $(shell uname -r)
-LINUX_KERNEL_PATH := /usr/src/linux-headers-$(LINUX_KERNEL)
-
-.PHONY:all
+.PHONY : all
 all:
-	@echo [1]$(CURRENT_PATH)
-	@echo [1]$(LINUX_KERNEL)
-	@echo [1]$(LINUX_KERNEL_PATH)
-	@echo 正在编译内核模块 $(shell date)
-	make -C $(LINUX_KERNEL_PATH) M=$(CURRENT_PATH) modules
-
-.PHONY:clean
-
+	@echo ----------[MAIN]正在编译内核模块 $(shell date)
+	cd $(SRCFILE) && make all
+	@echo ----------[MAIN]编译完成 $(shell date)			
+.PHONY : clean
 clean:
-	make -C $(LINUX_KERNEL_PATH) M=$(CURRENT_PATH) clean
+	cd $(SRCFILE) && make clean

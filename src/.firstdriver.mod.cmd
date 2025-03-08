@@ -1,0 +1,1 @@
+savedcmd_/home/maverick/Desktop/pro/code/embeded_driver/src/firstdriver.mod := printf '%s\n'   firstdriver.o | awk '!x[$$0]++ { print("/home/maverick/Desktop/pro/code/embeded_driver/src/"$$0) }' > /home/maverick/Desktop/pro/code/embeded_driver/src/firstdriver.mod
