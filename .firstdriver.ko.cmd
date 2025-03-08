@@ -1,0 +1,1 @@
+savedcmd_/home/maverick/Desktop/pro/code/embeded_driver/firstdriver.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/maverick/Desktop/pro/code/embeded_driver/firstdriver.ko /home/maverick/Desktop/pro/code/embeded_driver/firstdriver.o /home/maverick/Desktop/pro/code/embeded_driver/firstdriver.mod.o
