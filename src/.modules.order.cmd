@@ -1,1 +1,0 @@
-savedcmd_/home/maverick/Desktop/pro/code/embeded_driver/src/modules.order := {   echo /home/maverick/Desktop/pro/code/embeded_driver/src/firstdriver.o; :; } > /home/maverick/Desktop/pro/code/embeded_driver/src/modules.order
